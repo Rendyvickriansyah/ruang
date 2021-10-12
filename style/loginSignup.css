@@ -1,0 +1,21 @@
+:root {
+	--primaryColor: #ff8f3c;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	height: 100% !important;
+}
+
+.illustration {
+	background-color: #fff0e5;
+	height: 100vh !important;
+}
+
+form button {
+	background-color: var(--primaryColor) !important;
+}
+
+.form a {
+	color: var(--primaryColor);
+}
