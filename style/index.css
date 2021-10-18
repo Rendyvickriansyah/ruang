@@ -19,7 +19,7 @@ body {
 }
 
 .heroImgPlaceholder {
-	background-image: url("assets/homePage/img-hero-banner.png");
+	background-image: url("../Assets/homePage/img-hero-banner.png") !important;
 	background-position: center;
 	height: 600px;
 }
@@ -48,24 +48,35 @@ body {
 }
 
 .livingRoom {
-	background-image: url("assets/homePage/img-living-room.png");
+	background-image: url("../assets/homePage/img-living-room.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 20px !important;
 }
 
 .bedroom {
-	background-image: url("assets/homePage/img-bedroom.png");
+	background-image: url("../assets/homePage/img-bedroom.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 20px !important;
 }
 
 .kitchen {
-	background-image: url("assets/homePage/img-kitchen.png");
+	background-image: url("../assets/homePage/img-kitchen.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 20px !important;
+}
+
+.productCard {
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.productCard:hover {
+	box-shadow: 2px 27px 65px -19px rgba(137, 137, 137, 0.75) !important;
+	-webkit-box-shadow: 2px 27px 65px -19px rgba(137, 137, 137, 0.75) !important;
+	-moz-box-shadow: 2px 27px 65px -19px rgba(137, 137, 137, 0.75) !important;
 }
 
 .testimoni {
@@ -110,4 +121,52 @@ footer ul li a:hover {
 	font-size: 14px;
 	font-weight: 300;
 	color: white;
+}
+
+.productName,
+.productPrice {
+	color: #353535;
+}
+
+.product {
+	cursor: pointer;
+	border-radius: 20px;
+	padding: 8px;
+}
+
+/*OWL*/
+.owl-controls .owl-buttons {
+	position: relative;
+}
+.owl-controls .owl-prev {
+	position: absolute;
+	left: -40px;
+	bottom: 180px;
+	padding: 8px 17px;
+	background: var(--primaryColor);
+	border-radius: 50px;
+	transition: 0.5s;
+}
+.owl-controls .owl-next {
+	position: absolute;
+	right: -40px;
+	bottom: 180px;
+	padding: 8px 17px;
+	background: var(--primaryColor);
+	border-radius: 50px;
+	transition: 0.5s;
+}
+.owl-controls .owl-prev:after,
+.owl-controls .owl-next:after {
+	content: "\f104";
+	font-family: FontAwesome;
+	color: #fff;
+	font-size: 16px;
+}
+.owl-controls .owl-next:after {
+	content: "\f105";
+}
+.owl-controls .owl-prev:hover,
+.owl-controls .owl-next:hover {
+	background: #f3791c;
 }
