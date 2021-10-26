@@ -1,0 +1,61 @@
+:root {
+	--primaryColor: #ff8f3c;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden !important;
+}
+
+.link a {
+	color: var(--primaryColor);
+}
+
+.underlineActive {
+	border-bottom: #ff8f3c solid 3px;
+	width: 70%;
+	margin: auto;
+}
+
+.navbarCartTotal {
+	color: var(--primaryColor);
+}
+
+.productname p {
+	color: #595959;
+	font-size: 1.4rem;
+}
+
+.productname h5 {
+	font-size: 1.6rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.shippingCost {
+	color: #07d628;
+}
+
+.btn-checkout {
+	background-color: var(--primaryColor);
+	box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.2);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-checkout:hover {
+	background-color: #f3791c;
+	transform: scale(1.02);
+	box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.btn-checkout:focus {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.input-group button:focus {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}

@@ -1,0 +1,25 @@
+:root {
+	--primaryColor: #ff8f3c;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden !important;
+}
+
+.btnContinueShopping {
+	background-color: var(--primaryColor);
+	box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.2);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btnContinueShopping:focus {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.btnContinueShopping:hover {
+	background-color: #f3791c;
+	transform: scale(1.02);
+	box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+		<!-- Google Fonts -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Google Fonts -->
+
+		<!-- Remix Icon -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Remix Icon -->
+
+		<!-- External CSS -->
+		<link rel="stylesheet" href="style/cart.css" />
+		<!-- External CSS -->
+
+		<link rel="icon" href="Assets/justLogo.svg" />
+
+		<title>Cart</title>
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<header>
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-white shadow"
+				id="navBar"
+			>
+				<div class="container">
+					<a class="navbar-brand" href="#"
+						><img src="assets/Logo.svg" alt=""
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#"
+									><span><i class="bi bi-cart me-2"></i></span>Cart<span
+										class="navbarCartTotal"
+									>
+										(2)</span
+									></a
+								>
+								<div class="underlineActive"></div>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#"
+									><span><i class="bi bi-person me-2"></i></span>Account</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-lg-8 me-4">
+					<h4>Shopping Cart</h4>
+					<div class="productInCart mt-5">
+						<div
+							class="product1 d-flex justify-content-between align-items-center"
+						>
+							<div class="imgPlaceholder">
+								<img src="Assets/cart/product1.png" alt="Product 1" />
+							</div>
+							<div class="productname">
+								<p>Eames Dacey Chair</p>
+								<h5>IDR. 359.000</h5>
+							</div>
+							<div class="counter w-25">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button
+											type="button"
+											class="
+												btn btn-default btn-number
+												border border-secondary
+												rounded
+											"
+											disabled="disabled"
+											data-type="minus"
+											data-field="quant[1]"
+										>
+											<span><i class="ri-subtract-fill"></i></span>
+										</button>
+									</span>
+									<input
+										type="text"
+										name="quant[1]"
+										class="form-control input-number text-center border-0"
+										value="1"
+										min="1"
+										max="100"
+									/>
+									<span class="input-group-btn">
+										<button
+											type="button"
+											class="
+												btn btn-default btn-number
+												border border-secondary
+												rounded
+											"
+											data-type="plus"
+											data-field="quant[1]"
+										>
+											<span>
+												<i class="ri-add-line"></i>
+											</span>
+										</button>
+									</span>
+								</div>
+							</div>
+							<div class="deleteProduct">
+								<span>
+									<i class="ri-close-fill ri-xl"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+					<hr class="my-5" />
+					<div class="productInCart mt-5">
+						<div
+							class="product2 d-flex justify-content-between align-items-center"
+						>
+							<div class="imgPlaceholder">
+								<img src="Assets/cart/product2.png" alt="Product 1" />
+							</div>
+							<div class="productname">
+								<p>Interior Lamp</p>
+								<h5>IDR. 296.000</h5>
+							</div>
+							<div class="counter w-25">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button
+											type="button"
+											class="
+												btn btn-default btn-number
+												border border-secondary
+												rounded
+											"
+											disabled="disabled"
+											data-type="minus"
+											data-field="quant[1]"
+										>
+											<span><i class="ri-subtract-fill"></i></span>
+										</button>
+									</span>
+									<input
+										type="text"
+										name="quant[1]"
+										class="form-control input-number text-center border-0"
+										value="1"
+										min="1"
+										max="100"
+									/>
+									<span class="input-group-btn">
+										<button
+											type="button"
+											class="
+												btn btn-default btn-number
+												border border-secondary
+												rounded
+											"
+											data-type="plus"
+											data-field="quant[1]"
+										>
+											<span>
+												<i class="ri-add-line"></i>
+											</span>
+										</button>
+									</span>
+								</div>
+							</div>
+							<div class="deleteProduct">
+								<span>
+									<i class="ri-close-fill ri-xl"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<h4>Order info</h4>
+					<div class="order mt-5 d-flex justify-content-between">
+						<div class="orderDetail text-secondary">
+							<p>Subtotal</p>
+							<p>Tax (10%)</p>
+							<p>Shipping cost</p>
+							<p class="text-dark fw-bolder fs-5">Total</p>
+						</div>
+						<div class="price text-secondary">
+							<p>IDR 655.000</p>
+							<p>IDR 65.500</p>
+							<p class="shippingCost">FREE</p>
+							<p class="text-dark fw-bolder fs-5">IDR 720.500</p>
+						</div>
+					</div>
+					<div class="d-grid gap-2 mt-4">
+						<button
+							class="btn btn-checkout btn-lg text-white rounded"
+							type="button"
+						>
+							Checkout
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Akhir Navbar -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<script src="script.js"></script>
+	</body>
+</html>

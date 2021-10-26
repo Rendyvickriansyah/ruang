@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+		<!-- Google Fonts -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Google Fonts -->
+
+		<!-- Remix Icon -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Remix Icon -->
+
+		<!-- External CSS -->
+		<link rel="stylesheet" href="style/payment.css" />
+		<!-- External CSS -->
+
+		<link rel="icon" href="Assets/justLogo.svg" />
+
+		<title>Payment</title>
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<header>
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-white shadow"
+				id="navBar"
+			>
+				<div class="container">
+					<a class="navbar-brand" href="#"
+						><img src="assets/Logo.svg" alt=""
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#"
+									><span><i class="bi bi-cart me-2"></i></span>Cart<span
+										class="navbarCartTotal"
+									>
+										(2)</span
+									></a
+								>
+								<div class="underlineActive"></div>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#"
+									><span><i class="bi bi-person me-2"></i></span>Account</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Akhir Navbar -->
+
+		<div class="container mt-5">
+			<h4>Checkout</h4>
+			<div class="row mt-5">
+				<div class="col-lg-8 me-4">
+					<h4>Personal Information</h4>
+					<form action="" class="mt-5">
+						<div class="row nameForm mb-4">
+							<div class="col">
+								<div class="form-floating">
+									<input
+										type="text"
+										class="form-control"
+										id="firstName"
+										placeholder="First Name"
+									/>
+									<label for="firstName">First Name</label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-floating mb-4">
+									<input
+										type="text"
+										class="form-control"
+										id="lastName"
+										placeholder="Last Name"
+									/>
+									<label for="lastName">Last Name</label>
+								</div>
+							</div>
+							<div class="form-floating">
+								<input
+									type="email"
+									class="form-control"
+									id="floatingInput"
+									placeholder="Email"
+								/>
+								<label for="floatingInput" class="ps-4">Email address</label>
+							</div>
+						</div>
+
+						<div class="row shippingForm mt-5">
+							<h4>Shipping Information</h4>
+							<div class="col mt-5">
+								<div class="form-floating mb-4">
+									<input
+										type="text"
+										class="form-control"
+										id="province"
+										placeholder="province"
+									/>
+									<label for="province">Province</label>
+								</div>
+								<div class="form-floating mb-4">
+									<input
+										type="text"
+										class="form-control"
+										id="city"
+										placeholder="city"
+									/>
+									<label for="city">City</label>
+								</div>
+								<div class="form-floating mb-4">
+									<input
+										type="text"
+										class="form-control"
+										id="districts"
+										placeholder="districts"
+									/>
+									<label for="districts">Districts</label>
+								</div>
+								<div class="form-floating mb-4">
+									<input
+										type="number"
+										class="form-control"
+										id="postalCode"
+										placeholder="postalCode"
+									/>
+									<label for="postalCode">Postal Code</label>
+								</div>
+								<div class="form-floating">
+									<textarea
+										class="form-control"
+										placeholder="Address"
+										id="address"
+									></textarea>
+									<label for="address">Address</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="row paymentMethod mt-5">
+							<h4>Payment Method</h4>
+							<div class="accordion mt-5" id="accordionExample">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingOne">
+										<button
+											class="accordion-button"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseOne"
+											aria-expanded="true"
+											aria-controls="collapseOne"
+										>
+											<span class="me-3"
+												><i class="ri-visa-line ri-lg"></i></span
+											>Credit Card
+										</button>
+									</h2>
+									<div
+										id="collapseOne"
+										class="accordion-collapse collapse show"
+										aria-labelledby="headingOne"
+										data-bs-parent="#accordionExample"
+									>
+										<div class="accordion-body">
+											<div class="form-floating mb-3">
+												<input
+													type="text"
+													class="form-control"
+													id="nameOnCard"
+													placeholder="Name On Card"
+												/>
+												<label for="nameOnCard">Name on card</label>
+											</div>
+
+											<div class="form-floating mb-3">
+												<input
+													type="text"
+													class="form-control"
+													id="cardNumber"
+													placeholder="Card number"
+												/>
+												<label for="cardNumber">Card number</label>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="form-floating mb-3">
+														<input
+															type="text"
+															class="form-control"
+															id="dueDate"
+															placeholder="Due date"
+														/>
+														<label for="dueDate">Due date</label>
+													</div>
+												</div>
+												<div class="col">
+													<div class="form-floating mb-3">
+														<input
+															type="text"
+															class="form-control"
+															id="Cvv"
+															placeholder="Cvv"
+														/>
+														<label for="Cvv">Cvv</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingTwo">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseTwo"
+											aria-expanded="false"
+											aria-controls="collapseTwo"
+										>
+											<span class="me-3"
+												><i class="ri-bank-card-line ri-lg"></i
+											></span>
+											Bank Transfer
+										</button>
+									</h2>
+									<div
+										id="collapseTwo"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingTwo"
+										data-bs-parent="#accordionExample"
+									>
+										<div class="accordion-body">
+											<strong>This is the second item's accordion body.</strong>
+											It is hidden by default, until the collapse plugin adds
+											the appropriate classes that we use to style each element.
+											These classes control the overall appearance, as well as
+											the showing and hiding via CSS transitions. You can modify
+											any of this with custom CSS or overriding our default
+											variables. It's also worth noting that just about any HTML
+											can go within the <code>.accordion-body</code>, though the
+											transition does limit overflow.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="securePayment mt-4 d-flex align-items-center">
+							<div>
+								<i class="ri-secure-payment-line ri-2x me-3"></i>
+							</div>
+							<div>
+								<p class="text-secondary pt-3">Secure Payment</p>
+							</div>
+						</div>
+						<button
+							type="button"
+							class="btn w-100 btnConfirm text-white mt-3 btn-lg rounded"
+						>
+							Confirm payment
+						</button>
+					</form>
+				</div>
+				<div class="col">
+					<h5>Items</h5>
+					<div class="productList">
+						<div
+							class="
+								product
+								1
+								d-flex
+								align-items-center
+								justify-content-between
+							"
+						>
+							<div class="imagePlaceholder">
+								<img
+									src="Assets/cart/product1.png"
+									alt="Product 1"
+									width="100px"
+								/>
+							</div>
+							<div class="productNameAndPrice">
+								<p class="text-secondary">Eames Dacey Chair</p>
+								<h5 class="fw-bold">IDR. 359.000</h5>
+							</div>
+							<div class="deleteIcon">
+								<i class="ri-close-line ri-lg"></i>
+							</div>
+						</div>
+						<div
+							class="
+								product2
+								d-flex
+								align-items-center
+								justify-content-between
+								mt-4
+							"
+						>
+							<div class="imagePlaceholder">
+								<img
+									src="Assets/cart/product2.png"
+									alt="Product 2"
+									width="100px"
+								/>
+							</div>
+							<div class="productNameAndPrice">
+								<p class="text-secondary">Interior Lamp</p>
+								<h5 class="fw-bold">IDR. 296.000</h5>
+							</div>
+							<div class="deleteIcon">
+								<i class="ri-close-line ri-lg"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="orderInfo d-flex justify-content-between mt-5">
+						<div class="orderDetail text-secondary">
+							<p>Subtotal</p>
+							<p>Tax (10%)</p>
+							<p>Shipping cost</p>
+							<p class="text-dark fw-bolder fs-5">Total</p>
+						</div>
+						<div class="price text-secondary">
+							<p>IDR 655.000</p>
+							<p>IDR 65.500</p>
+							<p class="shippingCost">FREE</p>
+							<p class="text-dark fw-bolder fs-5">IDR 720.500</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="mt-5">
+			<div class="container py-5 text-white">
+				<div class="row">
+					<div class="col-lg-4">
+						<img src="assets/homePage/Logo-White.svg" alt="Logo" class="w-50" />
+						<p class="mt-5">Copyright © 2021 PT. Ruang</p>
+						<p>All rights reserved</p>
+						<div class="socialIcon d-flex justify-content-between w-50 mt-5">
+							<div class="icon1">
+								<a href="">
+									<img src="assets/homePage/Socialicon-Instagram.svg" alt="" />
+								</a>
+							</div>
+							<div class="icon2">
+								<a href="">
+									<img src="assets/homePage/Socialicon-Dribbble.svg" alt="" />
+								</a>
+							</div>
+							<div class="icon3">
+								<a href="">
+									<img src="assets/homePage/Socialicon-Twitter.svg" alt="" />
+								</a>
+							</div>
+							<div class="icon4">
+								<a href="">
+									<img src="assets/homePage/Socialicon-Youtube.svg" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<ul>
+							<li class="fw-bold">Company</li>
+							<li class="pt-4">
+								<a href="" class="text-decoration-none">About us</a>
+							</li>
+							<li class="pt-4">
+								<a href="" class="text-decoration-none">Contact us</a>
+							</li>
+							<li class="pt-4">
+								<a href="" class="text-decoration-none">Blog</a>
+							</li>
+							<li class="pt-4">
+								<a href="" class="text-decoration-none">Career</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<ul>
+							<li class="fw-bold">Support</li>
+							<li class="pt-4">
+								<a href="" class="text-decoration-none">Help center</a>
+							</li>
+							<li class="pt-4">
+								<a href="" class="text-decoration-none">Terms of service</a>
+							</li>
+							<li class="pt-4">
+								<a href="" class="text-decoration-none">Legal</a>
+							</li>
+							<li class="pt-4">
+								<a href="" class="text-decoration-none">Privacy policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<form action="">
+							<label for="" class="fw-bold">Join newsletter</label>
+							<div class="input-group mt-3">
+								<input
+									type="text"
+									class="form-control bg-dark inputField border-0 text-white"
+									placeholder="Your email"
+								/>
+								<button
+									class="btn btn-light bg-dark btnNewsLetter border-0"
+									type="button"
+									id="button-addon2"
+								>
+									<img src="assets/homePage/send.svg" alt="" />
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<script src="script.js"></script>
+	</body>
+</html>

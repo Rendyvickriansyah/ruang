@@ -7,6 +7,10 @@ body {
 	overflow-x: hidden !important;
 }
 
+.link a {
+	color: var(--primaryColor);
+}
+
 .active {
 	font-weight: 500;
 	color: white;
@@ -104,8 +108,7 @@ footer ul {
 }
 
 footer ul li a {
-	font-weight: 300;
-	color: #e1e1e1;
+	color: rgb(141, 141, 141);
 }
 
 footer ul li a:hover {

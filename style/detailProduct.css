@@ -116,3 +116,25 @@ a:hover {
 .owl-controls .owl-next:hover {
 	background: #f3791c;
 }
+
+footer {
+	background-color: #0b0d17;
+}
+
+footer p {
+	font-weight: 300;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li a {
+	font-weight: 300;
+	color: #e1e1e1;
+}
+
+footer ul li a:hover {
+	color: #fff;
+	font-weight: 500;
+}

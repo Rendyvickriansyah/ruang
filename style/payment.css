@@ -1,0 +1,77 @@
+:root {
+	--primaryColor: #ff8f3c;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden !important;
+}
+
+.form-control:focus {
+	border-color: var(--primaryColor);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #000;
+	background-color: #f1f1f1;
+}
+
+.accordion:active {
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+.ri-visa-line,
+.ri-bank-card-line {
+	color: var(--primaryColor);
+}
+
+.link a {
+	color: var(--primaryColor);
+}
+
+.underlineActive {
+	border-bottom: #ff8f3c solid 3px;
+	width: 70%;
+	margin: auto;
+}
+
+.btnConfirm {
+	background-color: var(--primaryColor);
+	box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.2);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btnConfirm:focus {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.btnConfirm:hover {
+	background-color: #f3791c;
+	transform: scale(1.02);
+	box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+	background-color: #0b0d17;
+}
+
+footer p {
+	font-weight: 300;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li a {
+	color: rgb(141, 141, 141);
+}
+
+footer ul li a:hover {
+	color: #fff;
+	font-weight: 500;
+}
